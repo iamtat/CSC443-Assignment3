@@ -1,0 +1,157 @@
+
+<!-- saved from url=(0113)file:///C:/Users/Arlette/Desktop/Fall2015/Web%20Programming/Assignments/Assignment3/CSC443-Assignment3/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+	<!-- Link To CSS file !-->
+	<link rel="stylesheet" href="assg2.css">
+
+	<title> Welcome! </title>
+
+
+</head>
+
+
+<body>
+<!--Header !-->
+	<header> <div> 
+	<img id="photo" src="taat.jpg" alt="Tatiana Chaer" onmouseover="alertImage()">
+	<h1>Assignment 1: CSS, JavaScript, and Forms</h1>
+	<h2> Brought to you by <i> Tatiana F. Chaer </i>
+	</h2>
+	<script>
+	function alertImage(){
+	alert("Why are you hovering over the image?")}
+	</script>
+	</div> </header>
+	
+
+
+<!-- Left Navigation !-->
+	<div class="ballout" style="
+    width: 100%;
+"> 
+	<div id="nav" style="width:20%;float: left;">
+	<a target="_self">Home</a>
+	<hr>
+	<a  target="_blank">About Me</a>
+	<hr>
+	<a  target="_self">Courses</a>
+	<hr>
+	<a target="_self">Guests</a>
+	<hr>
+	</div>
+
+		<div id="page" style="width:80%;
+		height: 100%;
+		float: left;
+		background: white;">
+			<p style = "margin:	10px;
+		color:#CC99FF" > Click any of the following to change the background color!</p>
+		
+				<button id="red" type="button" style=" background: red;
+											color: black;
+											margin: 10px;"
+											onclick="changeToRed()">Red</button>
+									<script>
+									function changeToRed(){
+									document.getElementById("page").style.backgroundColor="red";
+									}
+									</script>
+
+				<button type="button" style=" background: yellow;
+											color: black;
+											margin: 10px;"
+											onclick="changeToYellow()">Yellow</button>
+											<script>
+									function changeToYellow(){
+									document.getElementById("page").style.backgroundColor="yellow";
+									}
+									</script>
+									
+											
+				<button type="button" style=" background: green;
+											color: white;
+											margin: 10px;"
+											onclick="changeToGreen()">Green</button>
+											
+											<script>
+									function changeToGreen(){
+									document.getElementById("page").style.backgroundColor="green";
+									}
+									</script>
+								
+				<button type="button" style=" background: black;
+											color: white;
+											margin: 10px;"
+											onclick="changeToBlack()">Black</button>
+											
+											<script>
+									function changeToBlack(){
+									document.getElementById("page").style.backgroundColor="black";
+									}
+									</script>
+											
+				<button type="button" style=" background: silver;
+											color: black;
+											margin: 10px;"
+											onclick="changeToSilver()">Silver</button>
+											
+											<script>
+									function changeToSilver(){
+									document.getElementById("page").style.backgroundColor="silver";
+									}
+									</script>
+									
+				<button id="random" onclick="selectRandom()" style="color:#CC99FF; margin:10px;">Click ME</button>
+				<script>
+				function selectRandom(){
+				var randomNumber = Math.round(Math.random()*5);
+				var links = new Array();
+				links[0] = "http://slashdot.org/";
+				links[1] = "http://www.thinkgeek.com/";
+				links[2] = "http://despair.com/";
+				links[3] = "http://www.redbubble.com/";
+				links[4] = "http://googleresearch.blogspot.com/";
+				links[5] = "https://developers.google.com/speed/libraries/";
+					window.location = links[randomNumber];
+						/*switch(randomNumber) {
+							case 0:
+								window.location.href = 'http://slashdot.org/';
+								break;
+							case 1:
+								window.location.href = 'http://www.thinkgeek.com/';
+								break;
+							case 2:
+								window.location.href = 'http://despair.com/';
+								break;
+							case 3:
+								window.location.href = 'http://www.redbubble.com/';
+								break;
+							case 4:
+								window.location.href = 'http://googleresearch.blogspot.com/';
+								break;
+							case 5:
+								window.location.href = 'https://developers.google.com/speed/libraries/';
+								break;
+							default:
+								window.location.href = 'https://facebook.com'; 
+								}*/
+				}
+								</script>
+
+
+
+				</div>
+					</div>
+
+	
+
+
+<!-- Footer !-->
+	<footer> <div id="footer">
+	<em>CSC 443</em>, Assignment1, Fall 2015.
+	</div> </footer>
+
+
+
+</body></html>
